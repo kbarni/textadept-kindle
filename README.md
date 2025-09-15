@@ -7,6 +7,20 @@ extensibility without sacrificing speed and disk space, and without succumbing t
 a superabundance of features. The application has both a graphical user interface (GUI) version
 that runs in a desktop environment, and a terminal version that runs within a terminal emulator.
 
+---
+
+## Kindle porting notes
+
+The current version (11.4) was adapted to cross-compile for Kindle. (I couldn't make Textadept 12 work on Kindle)
+
+The curses version builds, but the GTK2 still has problems.
+
+To build the curses version, go to the `src/` folder, modify the toolchain path in the `Makefile` and run `make curses -j 8`
+
+For GTK2 build, type `make GTK2=1 -j 8`
+
+---
+
 ![Linux](https://orbitalquark.github.io/textadept/images/linux.png)
 ![macOS](https://orbitalquark.github.io/textadept/images/macosx.png)
 ![Windows](https://orbitalquark.github.io/textadept/images/win32.png)
