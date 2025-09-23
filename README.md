@@ -11,9 +11,9 @@ that runs in a desktop environment, and a terminal version that runs within a te
 
 ## Kindle porting notes
 
-The current version (11.4) was adapted to cross-compile for Kindle. (I couldn't make Textadept 12 work on Kindle)
+The current version (11.4) was adapted to cross-compile for Kindle. (I couldn't make Textadept 12 work on Kindle). This repo contains also the dependencies (scintilla, lexilla, termkey, cdk and lua) as I had to make some minor adjustments.
 
-The curses version builds, but the GTK2 still has problems.
+The curses and GTK2 versions both build using the Kindle SDK.
 
 To build the curses version, go to the `src/` folder, modify the toolchain path in the `Makefile` and run `make curses -j 8`
 
