@@ -303,7 +303,7 @@ local function set_title()
   local filename = buffer.filename or buffer._type or _L['Untitled']
   if buffer.filename then filename = select(2, pcall(string.iconv, filename, 'UTF-8', _CHARSET)) end
   local basename = buffer.filename and filename:match('[^/\\]+$') or filename
-  ui.title = 'L:A_N:application_ID:com.orbitalquark.textadept' -- string.format('%s %s Textadept (%s)', basename, buffer.modify and '*' or '-', filename)
+  ui.title = CURSES and string.format('%s %s Textadept (%s)', basename, buffer.modify and '*' or '-', filename) or 'L:A_N:application_ID:com.orbitalquark.textadept_PC:T_O:URL'
   buffer.tab_label = basename .. (buffer.modify and '*' or '')
 end
 
