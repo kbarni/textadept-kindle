@@ -9,6 +9,14 @@ that runs in a desktop environment, and a terminal version that runs within a te
 
 ---
 
+## Kindle usage notes
+
+Textadept is an advanced text editor you can use on a jailbroken Kindle. Currently it works on ARMHF firmwares (version 5.16.2+). It has graphical interface that uses GTK and text interface that can be run from Kterm.
+
+It is strongly recommended to use an external Bluetooth keyboard for typing. Here's a guide how to [connect classic Bluetooth keyboards](https://www.mobileread.com/forums/showthread.php?t=369712). Note that this is very experimental and works only on non-BLE keyboards.
+
+If you don't have a BT keyboard, launch the *Textadept without external keyboard* from KUAL. Otherwise you can use either the GUI version, or the terminal version without on-screen keyboard. I recommend using the terminal version, as the GUI version lags in the e-ink displays.
+
 ## Kindle porting notes
 
 The current version (11.4) was adapted to cross-compile for Kindle. (I couldn't make Textadept 12 work on Kindle). This repo contains also the dependencies (scintilla, lexilla, termkey, cdk and lua) as I had to make some minor adjustments.
