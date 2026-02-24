@@ -4,5 +4,5 @@
 # DontUseFBInk
 
 lipc-set-prop -s com.lab126.winmgr orientationLock R
-/mnt/us/textadept12/textadept.sh textadept-gtk
+/mnt/us/textadept/run.sh textadept-gtk
 lipc-set-prop -s com.lab126.winmgr orientationLock U  
