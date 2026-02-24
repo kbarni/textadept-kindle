@@ -1,25 +1,8 @@
 Scintilla changes:
 
-* Add Message::ChangeInsertion for programmatically setting input method.
-  This is helpful on newer versions of macOS, where changing the input method is flaky.
 * Handle leading whitespace in XPM images in order to prevent crashes.
-* Do not use fractional positioning on Gtk 2.
+* Use Qt macros instead of keywords in header.
 
-diff -r 52d56f79dc0f gtk/ScintillaGTK.cxx
---- a/gtk/ScintillaGTK.cxx	Fri Apr 09 15:11:26 2021 +1000
-+++ b/gtk/ScintillaGTK.cxx	Tue Apr 13 16:36:00 2021 -0400
-@@ -885,6 +887,11 @@
- 		case Message::GetDirectPointer:
- 			return reinterpret_cast<sptr_t>(this);
- 
-+		case Message::ChangeInsertion:
-+			// Hijack this interface to programmatically set input method.
-+			gtk_im_multicontext_set_context_id(GTK_IM_MULTICONTEXT(im_context.get()), ConstCharPtrFromSPtr(lParam));
-+			break;
-+
- 		case Message::TargetAsUTF8:
- 			return TargetAsUTF8(CharPtrFromSPtr(lParam));
- 
 diff -r 22b6bbb36280 src/XPM.cxx
 --- a/src/XPM.cxx	Sat Sep 05 07:55:08 2020 +1000
 +++ b/src/XPM.cxx	Fri Oct 02 20:32:13 2020 -0400
@@ -33,24 +16,35 @@ diff -r 22b6bbb36280 src/XPM.cxx
  	if ((0 == memcmp(textForm, "/* X", 4)) && (0 == memcmp(textForm, "/* XPM */", 9))) {
  		// Build the lines form out of the text form
  		std::vector<const char *> linesForm = LinesFormFromTextForm(textForm);
-diff -r 7dd0480eccaa gtk/PlatGTK.cxx
---- a/gtk/PlatGTK.cxx	Wed Jul 06 22:00:20 2022 +1000
-+++ b/gtk/PlatGTK.cxx	Mon Jul 25 10:54:38 2022 -0400
-@@ -75,7 +75,7 @@
- }
- 
- void SetFractionalPositions([[maybe_unused]] PangoContext *pcontext) noexcept {
--#if PANGO_VERSION_CHECK(1,44,3)
-+#if PANGO_VERSION_CHECK(1,44,3) && GTK_CHECK_VERSION(3,0,0)
- 	pango_context_set_round_glyph_positions(pcontext, FALSE);
+diff -r 123ae5de5bd2 qt/ScintillaEditBase/ScintillaEditBase.h
+--- a/qt/ScintillaEditBase/ScintillaEditBase.h	Sat Aug 27 08:02:08 2022 +1000
++++ b/qt/ScintillaEditBase/ScintillaEditBase.h	Thu Nov 24 10:30:29 2022 -0500
+@@ -44,8 +44,8 @@
+ #define EXPORT_IMPORT_API __declspec(dllexport)
+ #else
+ // Defining dllimport upsets moc
+-#define EXPORT_IMPORT_API __declspec(dllimport)
+-//#define EXPORT_IMPORT_API
++//#define EXPORT_IMPORT_API __declspec(dllimport)
++#define EXPORT_IMPORT_API
  #endif
- }
-@@ -370,7 +370,7 @@
- 	pango_context_set_base_dir(contextMeasure.get(), direction);
- 	pango_cairo_context_set_font_options(contextMeasure.get(), fontOptions);
- 	pango_context_set_language(contextMeasure.get(), language);
--	
-+
- 	return contextMeasure;
- }
+ #else
+ #define EXPORT_IMPORT_API
+@@ -69,7 +69,7 @@
+ 		uptr_t wParam = 0,
+ 		const char *s = 0) const;
  
+-public slots:
++public Q_SLOTS:
+ 	// Scroll events coming from GUI to be sent to Scintilla.
+ 	void scrollHorizontal(int value);
+ 	void scrollVertical(int value);
+@@ -78,7 +78,7 @@
+ 	void notifyParent(Scintilla::NotificationData scn);
+ 	void event_command(Scintilla::uptr_t wParam, Scintilla::sptr_t lParam);
+ 
+-signals:
++Q_SIGNALS:
+ 	void horizontalScrolled(int value);
+ 	void verticalScrolled(int value);
+ 	void horizontalRangeChanged(int max, int page);

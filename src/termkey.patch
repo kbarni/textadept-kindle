@@ -6,7 +6,7 @@ diff -r e0a74e8d32b3 driver-win-pdcurses.c
 --- /dev/null	Thu Jan 01 00:00:00 1970 +0000
 +++ b/driver-win-pdcurses.c	Thu Mar 24 11:45:45 2022 -0400
 @@ -0,0 +1,108 @@
-+// Copyright 2014-2022 Mitchell. See LICENSE.
++// Copyright 2014-2025 Mitchell. See LICENSE.
 +
 +#include "termkey.h"
 +#include "termkey-internal.h"
@@ -35,7 +35,7 @@ diff -r e0a74e8d32b3 driver-win-pdcurses.c
 +  }
 +
 +  int c = wgetch((WINDOW *)tk->fd), shift = 0, ctrl = 0, alt = 0;
-+  if (c == ERR) return TERMKEY_RES_EOF;
++  if (c == ERR) return TERMKEY_RES_NONE;
 +  int codepoint = c, number = 0, button = 0;
 +  TermKeyType type = TERMKEY_TYPE_UNICODE;
 +  TermKeySym sym = TERMKEY_SYM_UNKNOWN;
@@ -203,14 +203,14 @@ diff -r e0a74e8d32b3 termkey.c
        termios.c_lflag &= ~(ICANON|ECHO
  #ifdef IEXTEN
            | IEXTEN
-@@ -514,9 +520,9 @@
+@@ -520,9 +520,10 @@
          /* want no signal keys at all, so just disable ISIG */
          termios.c_lflag &= ~ISIG;
        else {
 -        /* Disable Ctrl-\==VQUIT and Ctrl-D==VSUSP but leave Ctrl-C as SIGINT */
-+        /* Disable Ctrl-\==VQUIT and Ctrl-C==VINTR */
++        /* Disable Ctrl-\==VQUIT and Ctrl-D==VSUSP and Ctrl-C==SIGINT */
          termios.c_cc[VQUIT] = _POSIX_VDISABLE;
--        termios.c_cc[VSUSP] = _POSIX_VDISABLE;
+         termios.c_cc[VSUSP] = _POSIX_VDISABLE;
 +        termios.c_cc[VINTR] = _POSIX_VDISABLE;
          /* Some OSes have Ctrl-Y==VDSUSP */
  #ifdef VDSUSP

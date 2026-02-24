@@ -27,139 +27,147 @@
 				<string>com.apple.xml-property-list</string>
 				<string>com.netscape.javascript-source</string>
 				<string>com.sun.java-source</string>
-				<string>com.textadept.Actionscript-source</string>
-				<string>com.textadept.Ada-source</string>
-				<string>com.textadept.ANTLR-source</string>
-				<string>com.textadept.APDL-source</string>
-				<string>com.textadept.APL-source</string>
-				<string>com.textadept.Applescript-source</string>
-				<string>com.textadept.ASM-source</string>
-				<string>com.textadept.ASP-source</string>
-				<string>com.textadept.AutoIt-source</string>
-				<string>com.textadept.AWK-source</string>
-				<string>com.textadept.Batch-source</string>
-				<string>com.textadept.BibTeX-source</string>
-				<string>com.textadept.Boo-source</string>
-				<string>com.textadept.C#-source</string>
-				<string>com.textadept.C/C++-source</string>
-				<string>com.textadept.ChucK-source</string>
-				<string>com.textadept.Clojure-source</string>
-				<string>com.textadept.CMake-source</string>
-				<string>com.textadept.CoffeeScript-source</string>
-				<string>com.textadept.Crystal-source</string>
-				<string>com.textadept.CSS-source</string>
-				<string>com.textadept.CUDA-source</string>
-				<string>com.textadept.D-source</string>
-				<string>com.textadept.Dart-source</string>
-				<string>com.textadept.Desktop-source</string>
+				<string>com.textadept.actionscript-source</string>
+				<string>com.textadept.ada-source</string>
+				<string>com.textadept.antlr-source</string>
+				<string>com.textadept.apdl-source</string>
+				<string>com.textadept.apl-source</string>
+				<string>com.textadept.applescript-source</string>
+				<string>com.textadept.asm-source</string>
+				<string>com.textadept.asp-source</string>
+				<string>com.textadept.autohotkey-source</string>
+				<string>com.textadept.autoit-source</string>
+				<string>com.textadept.awk-source</string>
+				<string>com.textadept.batch-source</string>
+				<string>com.textadept.bibtex-source</string>
+				<string>com.textadept.boo-source</string>
+				<string>com.textadept.csharp-source</string>
+				<string>com.textadept.c-source</string>
+				<string>com.textadept.cpp-source</string>
+				<string>com.textadept.chuck-source</string>
+				<string>com.textadept.clojure-source</string>
+				<string>com.textadept.cmake-source</string>
+				<string>com.textadept.coffeescript-source</string>
+				<string>com.textadept.crystal-source</string>
+				<string>com.textadept.css-source</string>
+				<string>com.textadept.cuda-source</string>
+				<string>com.textadept.d-source</string>
+				<string>com.textadept.dart-source</string>
+				<string>com.textadept.desktop-source</string>
 				<string>com.textadept.diff-source</string>
-				<string>com.textadept.Dockerfile-source</string>
+				<string>com.textadept.dockerfile-source</string>
 				<string>com.textadept.dot-source</string>
-				<string>com.textadept.Eiffel-source</string>
-				<string>com.textadept.Elixir-source</string>
-				<string>com.textadept.Elm-source</string>
-				<string>com.textadept.Erlang-source</string>
-				<string>com.textadept.F#-source</string>
-				<string>com.textadept.Fantom-source</string>
-				<string>com.textadept.Faust-source</string>
-				<string>com.textadept.Fennel-source</string>
-				<string>com.textadept.Fish-source</string>
-				<string>com.textadept.Forth-source</string>
-				<string>com.textadept.Fortran-source</string>
+				<string>com.textadept.eiffel-source</string>
+				<string>com.textadept.elixir-source</string>
+				<string>com.textadept.elm-source</string>
+				<string>com.textadept.erlang-source</string>
+				<string>com.textadept.fsharp-source</string>
+				<string>com.textadept.factor-source</string>
+				<string>com.textadept.fantom-source</string>
+				<string>com.textadept.faust-source</string>
+				<string>com.textadept.fennel-source</string>
+				<string>com.textadept.fish-source</string>
+				<string>com.textadept.forth-source</string>
+				<string>com.textadept.fortran-source</string>
 				<string>com.textadept.fstab-source</string>
-				<string>com.textadept.Gap-source</string>
-				<string>com.textadept.Gettext-source</string>
-				<string>com.textadept.Gherkin-source</string>
-				<string>com.textadept.Gleam-source</string>
-				<string>com.textadept.GLSL-source</string>
-				<string>com.textadept.GNUPlot-source</string>
-				<string>com.textadept.Go-source</string>
-				<string>com.textadept.Groovy-source</string>
-				<string>com.textadept.Gtkrc-source</string>
-				<string>com.textadept.Hare-source</string>
-				<string>com.textadept.Haskell-source</string>
-				<string>com.textadept.HTML-source</string>
-				<string>com.textadept.Icon-source</string>
-				<string>com.textadept.IDL-source</string>
-				<string>com.textadept.Inform-source</string>
+				<string>com.textadept.gap-source</string>
+				<string>com.textadept.gemini-source</string>
+				<string>com.textadept.gettext-source</string>
+				<string>com.textadept.gherkin-source</string>
+				<string>com.textadept.gleam-source</string>
+				<string>com.textadept.glsl-source</string>
+				<string>com.textadept.gnuplot-source</string>
+				<string>com.textadept.go-source</string>
+				<string>com.textadept.groovy-source</string>
+				<string>com.textadept.gtkrc-source</string>
+				<string>com.textadept.hare-source</string>
+				<string>com.textadept.haskell-source</string>
+				<string>com.textadept.html-source</string>
+				<string>com.textadept.icon-source</string>
+				<string>com.textadept.idl-source</string>
+				<string>com.textadept.inform-source</string>
 				<string>com.textadept.ini-source</string>
-				<string>com.textadept.Io-source</string>
-				<string>com.textadept.Java-source</string>
-				<string>com.textadept.Javascript-source</string>
+				<string>com.textadept.io_lang-source</string>
+				<string>com.textadept.java-source</string>
+				<string>com.textadept.javascript-source</string>
 				<string>com.textadept.jq-source</string>
-				<string>com.textadept.JSON-source</string>
-				<string>com.textadept.JSP-source</string>
-				<string>com.textadept.Julia-source</string>
-				<string>com.textadept.LaTeX-source</string>
-				<string>com.textadept.Ledger-source</string>
-				<string>com.textadept.LESS-source</string>
-				<string>com.textadept.LilyPond-source</string>
-				<string>com.textadept.Lisp-source</string>
-				<string>com.textadept.Literate-Coffeescript-source</string>
-				<string>com.textadept.Logtalk-source</string>
-				<string>com.textadept.Lua-source</string>
-				<string>com.textadept.Makefile-source</string>
-				<string>com.textadept.Man-source</string>
-				<string>com.textadept.Markdown-source</string>
-				<string>com.textadept.Meson-source</string>
-				<string>com.textadept.MoonScript-source</string>
-				<string>com.textadept.Myrddin-source</string>
-				<string>com.textadept.Nemerle-source</string>
-				<string>com.textadept.Networkd-source</string>
-				<string>com.textadept.Nim-source</string>
-				<string>com.textadept.NSIS-source</string>
-				<string>com.textadept.Objective-C-source</string>
-				<string>com.textadept.OCaml-source</string>
-				<string>com.textadept.Pascal-source</string>
-				<string>com.textadept.Perl-source</string>
-				<string>com.textadept.PHP-source</string>
-				<string>com.textadept.PICO-8-source</string>
-				<string>com.textadept.Pike-source</string>
-				<string>com.textadept.PKGBUILD-source</string>
-				<string>com.textadept.Pony-source</string>
-				<string>com.textadept.Postscript-source</string>
-				<string>com.textadept.PowerShell-source</string>
-				<string>com.textadept.Prolog-source</string>
-				<string>com.textadept.Properties-source</string>
-				<string>com.textadept.Protobuf-source</string>
-				<string>com.textadept.Pure-source</string>
-				<string>com.textadept.Python-source</string>
-				<string>com.textadept.R-source</string>
-				<string>com.textadept.Reason-source</string>
-				<string>com.textadept.REBOL-source</string>
-				<string>com.textadept.reST-source</string>
-				<string>com.textadept.Rexx-source</string>
-				<string>com.textadept.RHTML-source</string>
-				<string>com.textadept.RouterOS-source</string>
-				<string>com.textadept.Ruby-source</string>
-				<string>com.textadept.Rust-source</string>
-				<string>com.textadept.Sass-CSS-source</string>
-				<string>com.textadept.Scala-source</string>
-				<string>com.textadept.Scheme-source</string>
-				<string>com.textadept.Shell-source</string>
-				<string>com.textadept.Smalltalk-source</string>
-				<string>com.textadept.SML-source</string>
-				<string>com.textadept.SNOBOL4-source</string>
-				<string>com.textadept.Spin-source</string>
-				<string>com.textadept.SQL-source</string>
-				<string>com.textadept.Systemd-source</string>
-				<string>com.textadept.TaskPaper-source</string>
-				<string>com.textadept.Tcl-source</string>
-				<string>com.textadept.Texinfo-source</string>
-				<string>com.textadept.TOML-source</string>
-				<string>com.textadept.Txt2tags-source</string>
-				<string>com.textadept.TypeScript-source</string>
-				<string>com.textadept.Vala-source</string>
-				<string>com.textadept.vCard-source</string>
-				<string>com.textadept.Verilog-source</string>
-				<string>com.textadept.VHDL-source</string>
-				<string>com.textadept.Visual-Basic-source</string>
-				<string>com.textadept.WSF-source</string>
-				<string>com.textadept.XML-source</string>
-				<string>com.textadept.Xs-source</string>
-				<string>com.textadept.Xtend-source</string>
-				<string>com.textadept.YAML-source</string>
-				<string>com.textadept.Zig-source</string>
+				<string>com.textadept.json-source</string>
+				<string>com.textadept.jsp-source</string>
+				<string>com.textadept.julia-source</string>
+				<string>com.textadept.latex-source</string>
+				<string>com.textadept.ledger-source</string>
+				<string>com.textadept.less-source</string>
+				<string>com.textadept.lilypond-source</string>
+				<string>com.textadept.lisp-source</string>
+				<string>com.textadept.litcoffee-source</string>
+				<string>com.textadept.logtalk-source</string>
+				<string>com.textadept.lua-source</string>
+				<string>com.textadept.makefile-source</string>
+				<string>com.textadept.markdown-source</string>
+				<string>com.textadept.meson-source</string>
+				<string>com.textadept.moonscript-source</string>
+				<string>com.textadept.myrddin-source</string>
+				<string>com.textadept.nemerle-source</string>
+				<string>com.textadept.networkd-source</string>
+				<string>com.textadept.nim-source</string>
+				<string>com.textadept.nix-source</string>
+				<string>com.textadept.nsis-source</string>
+				<string>com.textadept.objeck-source</string>
+				<string>com.textadept.objective_c-source</string>
+				<string>com.textadept.caml-source</string>
+				<string>com.textadept.org-source</string>
+				<string>com.textadept.pascal-source</string>
+				<string>com.textadept.perl-source</string>
+				<string>com.textadept.php-source</string>
+				<string>com.textadept.pico8-source</string>
+				<string>com.textadept.pike-source</string>
+				<string>com.textadept.pkgbuild-source</string>
+				<string>com.textadept.pony-source</string>
+				<string>com.textadept.ps-source</string>
+				<string>com.textadept.powershell-source</string>
+				<string>com.textadept.prolog-source</string>
+				<string>com.textadept.props-source</string>
+				<string>com.textadept.protobuf-source</string>
+				<string>com.textadept.pure-source</string>
+				<string>com.textadept.python-source</string>
+				<string>com.textadept.r-source</string>
+				<string>com.textadept.reason-source</string>
+				<string>com.textadept.rebol-source</string>
+				<string>com.textadept.rest-source</string>
+				<string>com.textadept.rexx-source</string>
+				<string>com.textadept.rhtml-source</string>
+				<string>com.textadept.routeros-source</string>
+				<string>com.textadept.rpmspec-source</string>
+				<string>com.textadept.ruby-source</string>
+				<string>com.textadept.rust-source</string>
+				<string>com.textadept.sass-source</string>
+				<string>com.textadept.scala-source</string>
+				<string>com.textadept.scheme-source</string>
+				<string>com.textadept.bash-source</string>
+				<string>com.textadept.smalltalk-source</string>
+				<string>com.textadept.sml-source</string>
+				<string>com.textadept.snobol4-source</string>
+				<string>com.textadept.spin-source</string>
+				<string>com.textadept.sql-source</string>
+				<string>com.textadept.systemd-source</string>
+				<string>com.textadept.taskpaper-source</string>
+				<string>com.textadept.tcl-source</string>
+				<string>com.textadept.texinfo-source</string>
+				<string>com.textadept.toml-source</string>
+				<string>com.textadept.troff-source</string>
+				<string>com.textadept.txt2tags-source</string>
+				<string>com.textadept.typescript-source</string>
+				<string>com.textadept.vala-source</string>
+				<string>com.textadept.vcard-source</string>
+				<string>com.textadept.verilog-source</string>
+				<string>com.textadept.vhdl-source</string>
+				<string>com.textadept.vb-source</string>
+				<string>com.textadept.wsf-source</string>
+				<string>com.textadept.xml-source</string>
+				<string>com.textadept.xs-source</string>
+				<string>com.textadept.xtend-source</string>
+				<string>com.textadept.yaml-source</string>
+				<string>com.textadept.zig-source</string>
 				<string>net.daringfireball.markdown</string>
 				<string>public.c-header</string>
 				<string>public.c-plus-plus-header </string>
@@ -212,9 +220,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Actionscript source</string>
+			<string>actionscript source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Actionscript-source</string>
+			<string>com.textadept.actionscript-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -230,9 +238,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Ada source</string>
+			<string>ada source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Ada-source</string>
+			<string>com.textadept.ada-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -248,9 +256,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>ANTLR source</string>
+			<string>antlr source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.ANTLR-source</string>
+			<string>com.textadept.antlr-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -267,9 +275,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>APDL source</string>
+			<string>apdl source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.APDL-source</string>
+			<string>com.textadept.apdl-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -284,9 +292,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>APL source</string>
+			<string>apl source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.APL-source</string>
+			<string>com.textadept.apl-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -301,9 +309,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Applescript source</string>
+			<string>applescript source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Applescript-source</string>
+			<string>com.textadept.applescript-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -321,9 +329,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>ASM source</string>
+			<string>asm source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.ASM-source</string>
+			<string>com.textadept.asm-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -340,9 +348,26 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>ASP source</string>
+			<string>asp source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.ASP-source</string>
+			<string>com.textadept.asp-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>ahk</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>autohotkey source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.autohotkey-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -358,9 +383,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>AutoIt source</string>
+			<string>autoit source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.AutoIt-source</string>
+			<string>com.textadept.autoit-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -375,9 +400,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>AWK source</string>
+			<string>awk source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.AWK-source</string>
+			<string>com.textadept.awk-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -393,9 +418,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Batch source</string>
+			<string>batch source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Batch-source</string>
+			<string>com.textadept.batch-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -410,9 +435,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>BibTeX source</string>
+			<string>bibtex source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.BibTeX-source</string>
+			<string>com.textadept.bibtex-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -427,9 +452,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Boo source</string>
+			<string>boo source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Boo-source</string>
+			<string>com.textadept.boo-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -444,9 +469,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>C# source</string>
+			<string>csharp source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.C#-source</string>
+			<string>com.textadept.csharp-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -458,8 +483,24 @@
 				<key>public.filename-extension</key>
 				<array>
 					<string>c</string>
-					<string>cc</string>
 					<string>C</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>c source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.c-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>cc</string>
 					<string>cpp</string>
 					<string>cxx</string>
 					<string>c++</string>
@@ -471,9 +512,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>C/C++ source</string>
+			<string>cpp source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.C/C++-source</string>
+			<string>com.textadept.cpp-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -488,9 +529,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>ChucK source</string>
+			<string>chuck source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.ChucK-source</string>
+			<string>com.textadept.chuck-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -508,9 +549,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Clojure source</string>
+			<string>clojure source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Clojure-source</string>
+			<string>com.textadept.clojure-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -528,9 +569,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>CMake source</string>
+			<string>cmake source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.CMake-source</string>
+			<string>com.textadept.cmake-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -545,9 +586,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>CoffeeScript source</string>
+			<string>coffeescript source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.CoffeeScript-source</string>
+			<string>com.textadept.coffeescript-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -562,9 +603,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Crystal source</string>
+			<string>crystal source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Crystal-source</string>
+			<string>com.textadept.crystal-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -579,9 +620,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>CSS source</string>
+			<string>css source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.CSS-source</string>
+			<string>com.textadept.css-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -597,9 +638,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>CUDA source</string>
+			<string>cuda source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.CUDA-source</string>
+			<string>com.textadept.cuda-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -615,9 +656,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>D source</string>
+			<string>d source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.D-source</string>
+			<string>com.textadept.d-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -632,9 +673,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Dart source</string>
+			<string>dart source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Dart-source</string>
+			<string>com.textadept.dart-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -649,9 +690,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Desktop source</string>
+			<string>desktop source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Desktop-source</string>
+			<string>com.textadept.desktop-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -684,9 +725,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Dockerfile source</string>
+			<string>dockerfile source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Dockerfile-source</string>
+			<string>com.textadept.dockerfile-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -719,9 +760,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Eiffel source</string>
+			<string>eiffel source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Eiffel-source</string>
+			<string>com.textadept.eiffel-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -737,9 +778,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Elixir source</string>
+			<string>elixir source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Elixir-source</string>
+			<string>com.textadept.elixir-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -754,9 +795,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Elm source</string>
+			<string>elm source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Elm-source</string>
+			<string>com.textadept.elm-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -772,9 +813,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Erlang source</string>
+			<string>erlang source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Erlang-source</string>
+			<string>com.textadept.erlang-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -789,9 +830,26 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>F# source</string>
+			<string>fsharp source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.F#-source</string>
+			<string>com.textadept.fsharp-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>factor</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>factor source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.factor-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -806,9 +864,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Fantom source</string>
+			<string>fantom source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Fantom-source</string>
+			<string>com.textadept.fantom-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -823,9 +881,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Faust source</string>
+			<string>faust source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Faust-source</string>
+			<string>com.textadept.faust-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -840,9 +898,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Fennel source</string>
+			<string>fennel source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Fennel-source</string>
+			<string>com.textadept.fennel-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -857,9 +915,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Fish source</string>
+			<string>fish source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Fish-source</string>
+			<string>com.textadept.fish-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -875,9 +933,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Forth source</string>
+			<string>forth source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Forth-source</string>
+			<string>com.textadept.forth-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -900,9 +958,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Fortran source</string>
+			<string>fortran source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Fortran-source</string>
+			<string>com.textadept.fortran-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -936,9 +994,26 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Gap source</string>
+			<string>gap source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Gap-source</string>
+			<string>com.textadept.gap-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>gmi</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>gemini source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.gemini-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -954,9 +1029,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Gettext source</string>
+			<string>gettext source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Gettext-source</string>
+			<string>com.textadept.gettext-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -971,9 +1046,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Gherkin source</string>
+			<string>gherkin source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Gherkin-source</string>
+			<string>com.textadept.gherkin-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -988,9 +1063,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Gleam source</string>
+			<string>gleam source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Gleam-source</string>
+			<string>com.textadept.gleam-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1006,9 +1081,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>GLSL source</string>
+			<string>glsl source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.GLSL-source</string>
+			<string>com.textadept.glsl-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1024,9 +1099,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>GNUPlot source</string>
+			<string>gnuplot source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.GNUPlot-source</string>
+			<string>com.textadept.gnuplot-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1041,9 +1116,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Go source</string>
+			<string>go source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Go-source</string>
+			<string>com.textadept.go-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1059,9 +1134,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Groovy source</string>
+			<string>groovy source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Groovy-source</string>
+			<string>com.textadept.groovy-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1076,9 +1151,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Gtkrc source</string>
+			<string>gtkrc source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Gtkrc-source</string>
+			<string>com.textadept.gtkrc-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1093,9 +1168,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Hare source</string>
+			<string>hare source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Hare-source</string>
+			<string>com.textadept.hare-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1110,9 +1185,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Haskell source</string>
+			<string>haskell source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Haskell-source</string>
+			<string>com.textadept.haskell-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1132,9 +1207,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>HTML source</string>
+			<string>html source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.HTML-source</string>
+			<string>com.textadept.html-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1149,9 +1224,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Icon source</string>
+			<string>icon source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Icon-source</string>
+			<string>com.textadept.icon-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1167,9 +1242,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>IDL source</string>
+			<string>idl source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.IDL-source</string>
+			<string>com.textadept.idl-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1184,9 +1259,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Inform source</string>
+			<string>inform source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Inform-source</string>
+			<string>com.textadept.inform-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1222,9 +1297,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Io source</string>
+			<string>io_lang source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Io-source</string>
+			<string>com.textadept.io_lang-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1240,9 +1315,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Java source</string>
+			<string>java source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Java-source</string>
+			<string>com.textadept.java-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1258,9 +1333,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Javascript source</string>
+			<string>javascript source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Javascript-source</string>
+			<string>com.textadept.javascript-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1292,9 +1367,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>JSON source</string>
+			<string>json source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.JSON-source</string>
+			<string>com.textadept.json-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1309,9 +1384,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>JSP source</string>
+			<string>jsp source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.JSP-source</string>
+			<string>com.textadept.jsp-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1326,9 +1401,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Julia source</string>
+			<string>julia source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Julia-source</string>
+			<string>com.textadept.julia-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1348,9 +1423,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>LaTeX source</string>
+			<string>latex source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.LaTeX-source</string>
+			<string>com.textadept.latex-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1366,9 +1441,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Ledger source</string>
+			<string>ledger source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Ledger-source</string>
+			<string>com.textadept.ledger-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1383,9 +1458,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>LESS source</string>
+			<string>less source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.LESS-source</string>
+			<string>com.textadept.less-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1401,9 +1476,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>LilyPond source</string>
+			<string>lilypond source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.LilyPond-source</string>
+			<string>com.textadept.lilypond-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1421,9 +1496,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Lisp source</string>
+			<string>lisp source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Lisp-source</string>
+			<string>com.textadept.lisp-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1438,9 +1513,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Literate Coffeescript source</string>
+			<string>litcoffee source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Literate-Coffeescript-source</string>
+			<string>com.textadept.litcoffee-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1455,9 +1530,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Logtalk source</string>
+			<string>logtalk source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Logtalk-source</string>
+			<string>com.textadept.logtalk-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1472,9 +1547,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Lua source</string>
+			<string>lua source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Lua-source</string>
+			<string>com.textadept.lua-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1493,9 +1568,940 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Makefile source</string>
+			<string>makefile source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Makefile-source</string>
+			<string>com.textadept.makefile-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>md</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>markdown source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.markdown-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>meson.build</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>meson source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.meson-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>moon</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>moonscript source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.moonscript-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>myr</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>myrddin source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.myrddin-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>n</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>nemerle source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.nemerle-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>link</string>
+					<string>network</string>
+					<string>netdev</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>networkd source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.networkd-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>nim</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>nim source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.nim-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>nix</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>nix source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.nix-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>nsh</string>
+					<string>nsi</string>
+					<string>nsis</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>nsis source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.nsis-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>obs</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>objeck source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.objeck-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>m</string>
+					<string>mm</string>
+					<string>objc</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>objective_c source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.objective_c-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>caml</string>
+					<string>ml</string>
+					<string>mli</string>
+					<string>mll</string>
+					<string>mly</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>caml source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.caml-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>org</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>org source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.org-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>dpk</string>
+					<string>dpr</string>
+					<string>p</string>
+					<string>pas</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>pascal source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.pascal-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>al</string>
+					<string>perl</string>
+					<string>pl</string>
+					<string>pm</string>
+					<string>pod</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>perl source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.perl-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>inc</string>
+					<string>php</string>
+					<string>php3</string>
+					<string>php4</string>
+					<string>phtml</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>php source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.php-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>p8</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>pico8 source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.pico8-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>pike</string>
+					<string>pmod</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>pike source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.pike-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>PKGBUILD</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>pkgbuild source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.pkgbuild-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>pony</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>pony source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.pony-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>eps</string>
+					<string>ps</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>ps source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.ps-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>ps1</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>powershell source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.powershell-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>prolog</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>prolog source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.prolog-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>props</string>
+					<string>properties</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>props source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.props-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>proto</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>protobuf source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.protobuf-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>pure</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>pure source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.pure-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>sc</string>
+					<string>py</string>
+					<string>pyw</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>python source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.python-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>R</string>
+					<string>Rout</string>
+					<string>Rhistory</string>
+					<string>Rt</string>
+					<string>Rout.save</string>
+					<string>Rout.fail</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>r source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.r-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>re</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>reason source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.reason-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>r</string>
+					<string>reb</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>rebol source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.rebol-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>rst</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>rest source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.rest-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>orx</string>
+					<string>rex</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>rexx source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.rexx-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>erb</string>
+					<string>rhtml</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>rhtml source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.rhtml-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>rsc</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>routeros source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.routeros-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>spec</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>rpmspec source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.rpmspec-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>Rakefile</string>
+					<string>rake</string>
+					<string>rb</string>
+					<string>rbw</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>ruby source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.ruby-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>rs</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>rust source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.rust-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>sass</string>
+					<string>scss</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>sass source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.sass-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>scala</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>scala source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.scala-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>sch</string>
+					<string>scm</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>scheme source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.scheme-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>bash</string>
+					<string>bashrc</string>
+					<string>bash_profile</string>
+					<string>configure</string>
+					<string>csh</string>
+					<string>ksh</string>
+					<string>mksh</string>
+					<string>sh</string>
+					<string>zsh</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>bash source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.bash-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>changes</string>
+					<string>st</string>
+					<string>sources</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>smalltalk source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.smalltalk-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>sml</string>
+					<string>fun</string>
+					<string>sig</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>sml source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.sml-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>sno</string>
+					<string>SNO</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>snobol4 source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.snobol4-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>spin</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>spin source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.spin-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>ddl</string>
+					<string>sql</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>sql source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.sql-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>automount</string>
+					<string>device</string>
+					<string>mount</string>
+					<string>path</string>
+					<string>scope</string>
+					<string>service</string>
+					<string>slice</string>
+					<string>socket</string>
+					<string>swap</string>
+					<string>target</string>
+					<string>timer</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>systemd source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.systemd-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>taskpaper</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>taskpaper source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.taskpaper-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>tcl</string>
+					<string>tk</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>tcl source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.tcl-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>texi</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>texinfo source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.texinfo-source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>toml</string>
+				</array>
+			</dict>
+			<key>UTTypeDescription</key>
+			<string>toml source</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.textadept.toml-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -1527,872 +2533,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Man source</string>
+			<string>troff source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Man-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>md</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Markdown source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Markdown-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>meson.build</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Meson source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Meson-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>moon</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>MoonScript source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.MoonScript-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>myr</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Myrddin source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Myrddin-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>n</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Nemerle source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Nemerle-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>link</string>
-					<string>network</string>
-					<string>netdev</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Networkd source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Networkd-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>nim</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Nim source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Nim-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>nsh</string>
-					<string>nsi</string>
-					<string>nsis</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>NSIS source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.NSIS-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>m</string>
-					<string>mm</string>
-					<string>objc</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Objective C source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Objective-C-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>caml</string>
-					<string>ml</string>
-					<string>mli</string>
-					<string>mll</string>
-					<string>mly</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>OCaml source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.OCaml-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>dpk</string>
-					<string>dpr</string>
-					<string>p</string>
-					<string>pas</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Pascal source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Pascal-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>al</string>
-					<string>perl</string>
-					<string>pl</string>
-					<string>pm</string>
-					<string>pod</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Perl source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Perl-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>inc</string>
-					<string>php</string>
-					<string>php3</string>
-					<string>php4</string>
-					<string>phtml</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>PHP source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.PHP-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>p8</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>PICO-8 source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.PICO-8-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>pike</string>
-					<string>pmod</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Pike source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Pike-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>PKGBUILD</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>PKGBUILD source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.PKGBUILD-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>pony</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Pony source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Pony-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>eps</string>
-					<string>ps</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Postscript source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Postscript-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>ps1</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>PowerShell source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.PowerShell-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>prolog</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Prolog source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Prolog-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>props</string>
-					<string>properties</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Properties source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Properties-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>proto</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Protobuf source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Protobuf-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>pure</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Pure source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Pure-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>sc</string>
-					<string>py</string>
-					<string>pyw</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Python source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Python-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>R</string>
-					<string>Rout</string>
-					<string>Rhistory</string>
-					<string>Rt</string>
-					<string>Rout.save</string>
-					<string>Rout.fail</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>R source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.R-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>re</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Reason source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Reason-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>r</string>
-					<string>reb</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>REBOL source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.REBOL-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>rst</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>reST source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.reST-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>orx</string>
-					<string>rex</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Rexx source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Rexx-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>erb</string>
-					<string>rhtml</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>RHTML source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.RHTML-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>rsc</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>RouterOS source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.RouterOS-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>Rakefile</string>
-					<string>rake</string>
-					<string>rb</string>
-					<string>rbw</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Ruby source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Ruby-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>rs</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Rust source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Rust-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>sass</string>
-					<string>scss</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Sass CSS source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Sass-CSS-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>scala</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Scala source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Scala-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>sch</string>
-					<string>scm</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Scheme source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Scheme-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>bash</string>
-					<string>bashrc</string>
-					<string>bash_profile</string>
-					<string>configure</string>
-					<string>csh</string>
-					<string>ksh</string>
-					<string>mksh</string>
-					<string>sh</string>
-					<string>zsh</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Shell source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Shell-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>changes</string>
-					<string>st</string>
-					<string>sources</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Smalltalk source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Smalltalk-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>sml</string>
-					<string>fun</string>
-					<string>sig</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>SML source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.SML-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>sno</string>
-					<string>SNO</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>SNOBOL4 source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.SNOBOL4-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>spin</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Spin source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Spin-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>ddl</string>
-					<string>sql</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>SQL source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.SQL-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>automount</string>
-					<string>device</string>
-					<string>mount</string>
-					<string>path</string>
-					<string>scope</string>
-					<string>service</string>
-					<string>slice</string>
-					<string>socket</string>
-					<string>swap</string>
-					<string>target</string>
-					<string>timer</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Systemd source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Systemd-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>taskpaper</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>TaskPaper source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.TaskPaper-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>tcl</string>
-					<string>tk</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Tcl source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Tcl-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>texi</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>Texinfo source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Texinfo-source</string>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.source-code</string>
-			</array>
-		</dict>
-		<dict>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>toml</string>
-				</array>
-			</dict>
-			<key>UTTypeDescription</key>
-			<string>TOML source</string>
-			<key>UTTypeIdentifier</key>
-			<string>com.textadept.TOML-source</string>
+			<string>com.textadept.troff-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -2407,9 +2550,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Txt2tags source</string>
+			<string>txt2tags source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Txt2tags-source</string>
+			<string>com.textadept.txt2tags-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -2424,9 +2567,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>TypeScript source</string>
+			<string>typescript source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.TypeScript-source</string>
+			<string>com.textadept.typescript-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -2441,9 +2584,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Vala source</string>
+			<string>vala source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Vala-source</string>
+			<string>com.textadept.vala-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -2459,9 +2602,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>vCard source</string>
+			<string>vcard source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.vCard-source</string>
+			<string>com.textadept.vcard-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -2477,9 +2620,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Verilog source</string>
+			<string>verilog source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Verilog-source</string>
+			<string>com.textadept.verilog-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -2496,9 +2639,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>VHDL source</string>
+			<string>vhdl source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.VHDL-source</string>
+			<string>com.textadept.vhdl-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -2523,9 +2666,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Visual Basic source</string>
+			<string>vb source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Visual-Basic-source</string>
+			<string>com.textadept.vb-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -2540,9 +2683,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>WSF source</string>
+			<string>wsf source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.WSF-source</string>
+			<string>com.textadept.wsf-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -2563,9 +2706,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>XML source</string>
+			<string>xml source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.XML-source</string>
+			<string>com.textadept.xml-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -2582,9 +2725,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Xs source</string>
+			<string>xs source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Xs-source</string>
+			<string>com.textadept.xs-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -2599,9 +2742,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Xtend source</string>
+			<string>xtend source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Xtend-source</string>
+			<string>com.textadept.xtend-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -2617,9 +2760,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>YAML source</string>
+			<string>yaml source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.YAML-source</string>
+			<string>com.textadept.yaml-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -2634,9 +2777,9 @@
 				</array>
 			</dict>
 			<key>UTTypeDescription</key>
-			<string>Zig source</string>
+			<string>zig source</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.textadept.Zig-source</string>
+			<string>com.textadept.zig-source</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.source-code</string>
@@ -2658,9 +2801,9 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>11.4</string>
+	<string>12.9</string>
 	<key>CFBundleShortVersionString</key>
-	<string>11.4</string>
+	<string>12.9</string>
 	<key>NSHighResolutionCapable</key>
 	<true/>
 </dict>

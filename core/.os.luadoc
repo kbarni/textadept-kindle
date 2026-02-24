@@ -1,75 +1,72 @@
--- Copyright 2007-2022 Mitchell. See LICENSE.
+-- Copyright 2007-2025 Mitchell. See LICENSE.
 -- This is a DUMMY FILE used for making LuaDoc for built-in functions in the os table.
 
 --- Extends Lua's `os` library to provide process spawning capabilities.
-module('os')
+-- @module os
 
----
--- Spawns an interactive child process *cmd* in a separate thread, returning a handle to that
--- process.
--- On Windows, *cmd* is passed to `cmd.exe`: `%COMSPEC% /c [cmd]`.
--- At the moment, only the Windows terminal version spawns processes in the same thread.
--- @param cmd A command line string that contains the program's name followed by arguments to
---   pass to it. `PATH` is searched for program names.
--- @param cwd Optional current working directory (cwd) for the child process. When omitted,
---   the parent's cwd is used.
--- @param env Optional map of environment variables for the child process. When omitted,
---   Textadept's environment is used.
--- @param stdout_cb Optional Lua function that accepts a string parameter for a block of standard
---   output read from the child. Stdout is read asynchronously in 1KB or 0.5KB blocks (depending
---   on the platform), or however much data is available at the time.
---   At the moment, only the Win32 terminal version sends all output, whether it be stdout or
---   stderr, to this callback after the process finishes.
--- @param stderr_cb Optional Lua function that accepts a string parameter for a block of
---   standard error read from the child. Stderr is read asynchronously in 1KB or 0.5kB blocks
---   (depending on the platform), or however much data is available at the time.
--- @param exit_cb Optional Lua function that is called when the child process finishes. The
---   child's exit status is passed.
--- @return proc or nil plus an error message on failure
--- @usage os.spawn('lua ' .. buffer.filename, print)
--- @usage proc = os.spawn('lua -e "print(io.read())"', print)
---   proc:write('foo\n')
--- @class function
--- @name os.spawn
-local spawn
+--- Spawns an interactive child process in a separate thread.
+-- @param cmd Command line string that contains the program's name followed by arguments to
+--	pass to it. `$PATH` or `%PATH%` is searched for program names. On Windows, this entire
+--	string is passed to *cmd.exe*: `%COMSPEC% /c [cmd]`.
+-- @param[opt] cwd String current working directory (cwd) for the child process. When omitted,
+--	Textadept's cwd is used.
+-- @param[opt] env Table of environment variables for the child process. It can be a table of
+--	key-value string pairs, a table of "*key*=*value*" strings, or a combination of the
+--	two. When omitted, Textadept's environment is used. In order to create a new environment
+--	that inherits from Textadept's, you can: spawn `env` on macOS and Linux/BSD, or `set`
+--	on Windows; iterate over output matches of "key=value" pairs (one per line); assign
+--	them to the new environment table; add your own entries; and finally use that table here.
+-- @param[opt] stdout_cb Function that accepts a string parameter for a chunk of standard output
+--	read from the child. Textadept reads stdout in 1KB or 0.5KB chunks (depending on the
+--	platform), or however much data is available at the time.
+-- @param[optchain] stderr_cb Function that accepts a string parameter for a chunk of standard
+--	error read from the child. Textadept reads stderr in 1KB or 0.5kB chunks (depending on
+--	the platform), or however much data is available at the time.
+-- @param[optchain] exit_cb Function to call when the child process finishes. The child's exit
+--	status is passed as an argument.
+-- @return proc or `nil` plus an error message on failure
+-- @usage os.spawn('lua ' .. buffer.filename, print) -- non-interactive
+-- @usage local proc = os.spawn('lua -e "print(io.read())"', print) -- interactive
+--	proc:write('foo\n')
+--	proc:close() -- close stdin, not the process
+-- @function spawn
 
----
--- Returns the status of process *spawn_proc*, which is either "running" or "terminated".
--- @return "running" or "terminated"
-function spawn_proc:status() end
+--- A spawned process.
+-- @type proc
 
----
--- Blocks until process *spawn_proc* finishes (if it has not already done so) and returns its
--- status code.
--- @return integer status code
-function spawn_proc:wait() end
+--- Returns the status of the process, either "running" or "terminated".
+function proc:status() end
 
----
--- Reads and returns stdout from process *spawn_proc*, according to string format or number *arg*.
--- Similar to Lua's `io.read()` and blocks for input. *spawn_proc* must still be running. If
--- an error occurs while reading, returns `nil`, an error code, and an error message.
--- Ensure any read operations read all stdout available, as the stdout callback function passed
--- to `os.spawn()` will not be called until the stdout buffer is clear.
--- @param arg Optional argument similar to those in Lua's `io.read()`, but "n" is not
---   supported. The default value is "l", which reads a line.
--- @return string of bytes read
-function spawn_proc:read(arg) end
+--- Blocks until the process finishes (if it has not already done so).
+-- @return status code of the finished process
+function proc:wait() end
 
----
--- Writes string input to the stdin of process *spawn_proc*.
--- Note: On Linux, if more than 65536 bytes (64K) are to be written, it is possible those
--- bytes need to be written in 65536-byte (64K) chunks, or the process may not receive all
--- input. However, it is also possible that there is a limit on how many bytes can be written
--- in a short period of time, perhaps 196608 bytes (192K).
--- @param ... Standard input for *spawn_proc*.
-function spawn_proc:write(...) end
+--- Returns stdout read from the running process, or `nil` plus an error code and an error
+-- message if an error occurred.
+-- This may block until stdout is available for reading.
+--
+-- If the process has a stdout callback function, you must manually read all stdout available
+-- before Textadept can call that callback again.
+-- @param[opt='l'] arg Argument similar to those in Lua's `io.read()`. In summary:
+--	- *n*: Read *n* number of bytes, or `nil` at end-of-file (EOF).
+--	- "a": Read all output, or an empty string at EOF.
+--	- "l": Read the next line, skipping any end-of-line (EOL) characters; or `nil` at EOF.
+--	- "L": Read the next line, including any EOL characters; or `nil` at EOF.
+function proc:read(arg) end
 
----
--- Closes standard input for process *spawn_proc*, effectively sending an EOF (end of file) to it.
-function spawn_proc:close() end
+--- Writes to the process's stdin.
+--
+-- Linux note: When using the GTK or terminal version, if more than 65536 bytes (64K) are to
+-- be written, it is possible those bytes need to be written in 65536-byte (64K) chunks, or
+-- the process may not receive all input. However, it is also possible that there is a limit
+-- on how many bytes can be written in a short period of time, perhaps 196608 bytes (192K). The
+-- Qt version does not appear to have this limitation.
+-- @param ... Standard input to write.
+function proc:write(...) end
 
----
--- Kills running process *spawn_proc*, or sends it Unix signal *signal*.
--- @param signal Optional Unix signal to send to *spawn_proc*. The default value is 9 (`SIGKILL`),
---   which kills the process.
-function spawn_proc:kill() end
+--- Closes the process's standard input, effectively sending it an EOF (end of file).
+function proc:close() end
+
+--- Kills the running process.
+-- @param[opt=9] signal Unix signal to send, if not `SIGKILL`.
+function proc:kill() end

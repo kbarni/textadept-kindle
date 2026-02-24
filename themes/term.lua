@@ -1,8 +1,7 @@
--- Copyright 2007-2022 Mitchell. See LICENSE.
+-- Copyright 2007-2025 Mitchell. See LICENSE.
 -- Terminal theme for Textadept.
--- Contributions by Ana Balan.
 
-local view, colors, styles = view, lexer.colors, lexer.styles
+local view, colors, styles = view, view.colors, view.styles
 
 -- Normal colors.
 colors.black = 0x000000
@@ -27,32 +26,83 @@ colors.light_cyan = 0xFFFF00
 colors.light_white = 0xFFFFFF
 
 -- Predefined styles.
-styles.default = {fore = colors.white, back = colors.black}
-styles.line_number = {fore = colors.black, bold = true}
-styles.brace_light = {fore = colors.yellow, bold = true}
--- styles.control_char =
--- styles.indent_guide =
-styles.call_tip = {fore = colors.white, back = colors.black}
-styles.fold_display_text = {fore = colors.black, bold = true}
+styles[view.STYLE_DEFAULT] = {fore = colors.white, back = colors.black}
+styles[view.STYLE_LINENUMBER] = {fore = colors.black, bold = true}
+styles[view.STYLE_BRACELIGHT] = {bold = true}
+styles[view.STYLE_BRACEBAD] = {fore = colors.red, bold = true}
+-- styles[view.STYLE_CONTROLCHAR] ={}
+-- styles[view.STYLE_INDENTGUIDE] ={}
+styles[view.STYLE_CALLTIP] = {fore = colors.white, back = colors.black}
+styles[view.STYLE_FOLDDISPLAYTEXT] = {fore = colors.black, bold = true}
 
--- Token styles.
-styles.class = {fore = colors.yellow}
-styles.comment = {fore = colors.black, bold = true}
-styles.constant = {fore = colors.red}
-styles.embedded = {fore = colors.white, bold = true, back = colors.black}
-styles.error = {fore = colors.red, bold = true}
-styles['function'] = {fore = colors.blue}
-styles.identifier = {}
-styles.keyword = {fore = colors.white, bold = true}
-styles.label = {fore = colors.red, bold = true}
-styles.number = {fore = colors.cyan}
-styles.operator = {fore = colors.yellow}
-styles.preprocessor = {fore = colors.magenta}
-styles.regex = {fore = colors.green, bold = true}
-styles.string = {fore = colors.green}
-styles.type = {fore = colors.magenta, bold = true}
-styles.variable = {fore = colors.blue, bold = true}
-styles.whitespace = {}
+-- Tag styles.
+styles[lexer.ANNOTATION] = {fore = colors.magenta, bold = true}
+styles[lexer.ATTRIBUTE] = {fore = colors.blue}
+-- styles[lexer.BOLD] = {}
+styles[lexer.CLASS] = {fore = colors.yellow, bold = true}
+-- styles[lexer.CODE] = {}
+styles[lexer.COMMENT] = {fore = colors.black, bold = true}
+-- styles[lexer.CONSTANT] = {}
+styles[lexer.CONSTANT_BUILTIN] = {fore = colors.magenta}
+-- styles[lexer.EMBEDDED] = {}
+styles[lexer.ERROR] = {fore = colors.red, bold = true}
+-- styles[lexer.FUNCTION] = {}
+styles[lexer.FUNCTION_BUILTIN] = {fore = colors.yellow}
+-- styles[lexer.FUNCTION_METHOD] = {}
+styles[lexer.HEADING] = {fore = colors.magenta, bold = true}
+styles[lexer.IDENTIFIER] = {}
+-- styles[lexer.ITALIC] = {}
+styles[lexer.KEYWORD] = {fore = colors.blue, bold = true}
+styles[lexer.LABEL] = {fore = colors.magenta, bold = true}
+-- styles[lexer.LINK] = {}
+styles[lexer.LIST] = {fore = colors.cyan}
+styles[lexer.NUMBER] = {fore = colors.cyan}
+-- styles[lexer.OPERATOR] = {}
+styles[lexer.PREPROCESSOR] = {fore = colors.magenta, bold = true}
+-- styles[lexer.REFERENCE] = {}
+styles[lexer.REGEX] = {fore = colors.green, bold = true}
+styles[lexer.STRING] = {fore = colors.green}
+styles[lexer.TAG] = {fore = colors.blue, bold = true}
+styles[lexer.TYPE] = {fore = colors.blue}
+-- styles[lexer.UNDERLINE] = {}
+-- styles[lexer.VARIABLE] = {}
+styles[lexer.VARIABLE_BUILTIN] = {fore = colors.yellow, bold = true}
+-- styles[lexer.WHITESPACE] = {}
+
+-- CSS.
+styles.property = styles[lexer.ATTRIBUTE]
+-- styles.pseudoclass = {}
+-- styles.pseudoelement = {}
+-- Diff.
+styles.addition = {fore = colors.green}
+styles.deletion = {fore = colors.red}
+styles.change = {fore = colors.yellow}
+-- HTML.
+styles.tag_unknown = styles.tag .. {fore = colors.red, bold = true}
+styles.attribute_unknown = styles.attribute .. {fore = colors.red, bold = true}
+-- Latex, TeX, and Texinfo.
+styles.command = styles[lexer.KEYWORD]
+styles.command_section = styles[lexer.HEADING]
+styles.environment = styles[lexer.TYPE]
+styles.environment_math = styles[lexer.NUMBER]
+-- Makefile.
+-- styles.target = {}
+-- Markdown.
+-- styles.hr = {}
+-- Output.
+styles.csi = {visible = false}
+local csi_colors = {
+	black = colors.black, red = colors.red, green = colors.green, yellow = colors.yellow,
+	blue = colors.blue, magenta = colors.magenta, cyan = colors.cyan, white = colors.white
+}
+for k, v in pairs(csi_colors) do styles['csi_' .. k] = {fore = v} end
+for k, v in pairs(csi_colors) do styles['csi_' .. k .. '_bright'] = {fore = v, bold = true} end
+-- Python.
+styles.keyword_soft = {}
+-- XML.
+-- styles.cdata = {}
+-- YAML.
+styles.error_indent = {back = colors.red}
 
 -- Element colors.
 -- view.element_color[view.ELEMENT_SELECTION_TEXT] = colors.white
@@ -62,6 +112,7 @@ styles.whitespace = {}
 -- view.element_color[view.ELEMENT_CARET] = colors.black
 -- view.element_color[view.ELEMENT_CARET_ADDITIONAL] =
 -- view.element_color[view.ELEMENT_CARET_LINE_BACK] =
+view.element_color[view.ELEMENT_WHITE_SPACE] = colors.black
 
 -- Fold Margin.
 -- view:set_fold_margin_color(true, colors.white)
@@ -71,6 +122,10 @@ styles.whitespace = {}
 view.marker_back[textadept.bookmarks.MARK_BOOKMARK] = colors.blue
 view.marker_back[textadept.run.MARK_WARNING] = colors.yellow
 view.marker_back[textadept.run.MARK_ERROR] = colors.red
+view.marker_fore[view.MARKNUM_HISTORY_MODIFIED] = colors.yellow
+view.marker_fore[view.MARKNUM_HISTORY_SAVED] = colors.green
+view.marker_fore[view.MARKNUM_HISTORY_REVERTED_TO_MODIFIED] = colors.yellow
+view.marker_fore[view.MARKNUM_HISTORY_REVERTED_TO_ORIGIN] = colors.yellow
 
 -- Indicators.
 view.indic_fore[ui.find.INDIC_FIND] = colors.yellow

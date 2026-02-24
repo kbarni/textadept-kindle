@@ -1,31 +1,36 @@
--- Copyright 2007-2022 Mitchell. See LICENSE.
+-- Copyright 2007-2025 Mitchell. See LICENSE.
 
+--- Map of all messages used by Textadept to their localized forms.
+-- If the localized form of a given message does not exist, the non-localized message is
+-- returned. Use Lua's `rawget()` to check if a localization exists.
+--
+-- Terminal version note: any "_" or "&" mnemonics the GUI version would use are ignored.
+-- @module _L
 local M = {}
 
---[[ This comment is for LuaDoc.
----
--- Map of all messages used by Textadept to their localized form.
--- If the table does not contain the localized version of a given message, it returns a string
--- that starts with "No Localization:" via a metamethod.
--- Note: the terminal version ignores any "_" mnemonics the GUI version would use.
-module('_L')]]
-
-local f = io.open(_USERHOME .. '/locale.conf', 'rb')
-if not f then
-  local lang = (os.getenv('LANG') or ''):match('^[^_.@]+') -- TODO: LC_MESSAGES?
-  if lang then f = io.open(string.format('%s/core/locales/locale.%s.conf', _HOME, lang)) end
+local files = {_USERHOME .. '/locale.conf'}
+local locale, lang = (os.getenv('LANG') or ''):match('^(([^_.@]+)_?[^.@]*)')
+if locale then
+	files[#files + 1] = string.format('%s/core/locales/locale.%s.conf', _HOME, locale)
+	files[#files + 1] = string.format('%s/core/locales/locale.%s.conf', _HOME, lang)
 end
-if not f then f = io.open(_HOME .. '/core/locale.conf', 'rb') end
-assert(f, '"core/locale.conf" not found')
-for line in f:lines() do
-  -- Any line that starts with a non-word character except '[' is considered a comment.
-  if not line:find('^%s*[%w_%[]') then goto continue end
-  local id, str = line:match('^(.-)%s*=%s*(.-)\r?$')
-  if id and str and assert(not M[id], 'duplicate locale key "%s"', id) then
-    M[id] = not CURSES and str or str:gsub('_', '')
-  end
-  ::continue::
-end
-f:close()
+files[#files + 1] = _HOME .. '/core/locale.conf'
 
-return setmetatable(M, {__index = function(_, k) return 'No Localization:' .. k end})
+for _, locale_file in ipairs(files) do
+	if not lfs.attributes(locale_file) then goto continue end
+	for line in io.lines(locale_file) do
+		-- Localization entries must start with a word or '['.
+		local id, str = line:match('^([%w_%[].-)%s*=%s*(.-)\r?$')
+		if id then
+			assert(not M[id], 'duplicate locale key: %s', id)
+			M[id] = GTK and str or str:gsub('_', QT and '&' or '')
+		end
+	end
+	break
+	::continue::
+end
+
+return setmetatable(M, {
+	__index = function(_, k) return k end,
+	__newindex = QT and function(t, k, v) rawset(t, k, v:gsub('_', '&')) end or nil
+})
