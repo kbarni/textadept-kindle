@@ -1,0 +1,29 @@
+# Build and documentation.
+build/
+buildhf/
+
+# Site
+docs/_site
+docs/Gemfile.lock
+*.css
+*.html
+
+# Lexers.
+lexers
+
+# Modules.
+modules/debugger
+modules/export
+modules/file_diff
+modules/format
+modules/lsp
+modules/lua_repl
+modules/ollama
+modules/open_file_mode
+modules/scratch
+modules/spellcheck
+modules/update_notifier
+
+# Profiling, coverage, and test data.
+luacov.*.out
+test.log
