@@ -983,6 +983,7 @@ int main(int argc, char **argv) {
 	// Set terminal resume and resize handlers.
 	struct sigaction act = {.sa_handler = signalled};
 	sigfillset(&act.sa_mask), sigaction(SIGCONT, &act, NULL), sigaction(SIGWINCH, &act, NULL);
+	signalled(0); // force initial resize and root pane update
 #else
 	freopen("NUL", "w", stdout), freopen("NUL", "w", stderr); // redirect
 #endif
