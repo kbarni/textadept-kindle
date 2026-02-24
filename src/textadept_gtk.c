@@ -47,7 +47,9 @@ static bool exiting(GtkWidget *_, GdkEventAny *__, void *___) {
 
 // Signal for a Textadept window focus change.
 // Generates a 'focus' event.
-static bool window_focused(GtkWidget *_, GdkEventFocus *__, void *___) {
+static bool window_focused(GtkWidget *widget, GdkEventFocus *__, void *___) {
+	GdkGrabStatus status = gdk_keyboard_grab(gtk_widget_get_window(widget), false, GDK_CURRENT_TIME);
+	if (status != GDK_GRAB_SUCCESS) g_warning("Failed to grab keyboard!");
 	if (!is_command_entry_active()) emit("focus", -1);
 	return false;
 }
@@ -55,6 +57,7 @@ static bool window_focused(GtkWidget *_, GdkEventFocus *__, void *___) {
 // Signal for window focus loss.
 // Generates an 'unfocus' event.
 static bool focus_lost(GtkWidget *_, GdkEvent *__, void *___) {
+	gdk_keyboard_ungrab(GDK_CURRENT_TIME);
 	return (emit("unfocus", -1), is_command_entry_active()); // keep focus if window is losing focus
 }
 
@@ -64,7 +67,7 @@ static bool window_keypress(GtkWidget *_, GdkEventKey *event, void *__) {
 		!gtk_widget_has_focus(command_entry))
 		return (gtk_widget_grab_focus(focused_view), gtk_widget_hide(findbox),
 			emit("find_pane_hide", -1), true);
-	return false;
+	return gtk_window_propagate_key_event(GTK_WINDOW(_), event);
 }
 
 // Signal for switching buffer tabs.
