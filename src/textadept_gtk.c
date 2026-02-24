@@ -6,11 +6,20 @@
 #include "lauxlib.h"
 
 #include <math.h> // for fmax
+#include <string.h> // added
+#include <stdlib.h> //  added
 #include <signal.h>
 #include <sys/wait.h>
 #include <gdk/gdkkeysyms.h>
 #include <gtk/gtk.h>
 #include "ScintillaWidget.h" // must come after <gtk/gtk.h>
+
+#if !GTK_CHECK_VERSION(2, 22, 0)
+#define gtk_message_dialog_get_message_area(dialog) gtk_dialog_get_content_area(GTK_DIALOG(dialog))
+#endif
+#if !GTK_CHECK_VERSION(2, 14, 0)
+#define gtk_dialog_get_content_area(dialog) (GTK_DIALOG(dialog)->vbox)
+#endif
 
 // GTK objects.
 static GtkWidget *window, *menubar, *tabbar, *statusbar[2];
@@ -87,8 +96,8 @@ static bool find_keypress(GtkWidget *widget, GdkEventKey *event, void *_) {
 static GtkWidget *new_combo(GtkWidget **label, GtkWidget **entry, GtkListStore **history) {
 	*label = gtk_label_new(""); // localized label text set later via Lua
 	*history = gtk_list_store_new(1, G_TYPE_STRING);
-	GtkWidget *combo = gtk_combo_box_new_with_model_and_entry(GTK_TREE_MODEL(*history));
-	gtk_combo_box_set_entry_text_column(GTK_COMBO_BOX(combo), 0),
+	GtkWidget *combo = gtk_combo_box_entry_new_with_model(GTK_TREE_MODEL(*history), 0); //***gtk_combo_box_new_with_model_and_entry(GTK_TREE_MODEL(*history));
+	gtk_combo_box_entry_set_text_column(GTK_COMBO_BOX_ENTRY(combo), 0); //***gtk_combo_box_set_entry_text_column(GTK_COMBO_BOX(combo), 0),
 		gtk_combo_box_set_focus_on_click(GTK_COMBO_BOX(combo), false);
 	*entry = gtk_bin_get_child(GTK_BIN(combo));
 	gtk_entry_set_text(GTK_ENTRY(*entry), " "), gtk_entry_set_text(GTK_ENTRY(*entry), ""); // non-NULL
@@ -146,10 +155,10 @@ static GtkWidget *new_findbox(void) {
 }
 
 void new_window(SciObject *(*get_view)(void)) {
-	char *icon = g_strconcat(textadept_home, "/core/images/textadept.svg", NULL);
-	gtk_window_set_default_icon_from_file(icon, NULL), free(icon);
+	//char *icon = g_strconcat(textadept_home, "/core/images/textadept.svg", NULL);
+	//gtk_window_set_default_icon_from_file(icon, NULL), free(icon);
 
-	window = gtk_window_new(GTK_WINDOW_TOPLEVEL), gtk_widget_set_name(window, "textadept");
+	window = gtk_window_new(GTK_WINDOW_TOPLEVEL), gtk_widget_set_name(window, "L:A_N:application_PC:T_ID:com.orbitalquark.textadept_PC:N_O:URL");
 	gtk_window_set_default_size(GTK_WINDOW(window), 1000, 600);
 	g_signal_connect(window, "delete-event", G_CALLBACK(exiting), NULL);
 	g_signal_connect(window, "focus-in-event", G_CALLBACK(window_focused), NULL);
@@ -556,6 +565,7 @@ bool is_dark_mode(void) {
 static GtkWidget *new_dialog(DialogOptions *opts) {
 	GtkWidget *dialog =
 		gtk_message_dialog_new(GTK_WINDOW(window), 0, GTK_MESSAGE_OTHER, 0, "%s", opts->title);
+	gtk_window_set_title(GTK_WINDOW(dialog), "L:D_N:application_PC:T_ID:com.orbitalquark.textadept_O:URL");
 	GtkWidget *image = NULL;
 	if (opts->icon && gtk_icon_theme_has_icon(gtk_icon_theme_get_default(), opts->icon))
 		image = gtk_image_new_from_icon_name(opts->icon, GTK_ICON_SIZE_DIALOG);
@@ -589,8 +599,8 @@ int input_dialog(DialogOptions opts, lua_State *L) {
 
 // `ui.dialogs.open{...}` or `ui.dialogs.save{...}` Lua function.
 static int open_save_dialog(DialogOptions *opts, lua_State *L, bool open) {
-	GtkWidget *dialog = gtk_file_chooser_dialog_new(opts->title, GTK_WINDOW(window),
-		open ? GTK_FILE_CHOOSER_ACTION_OPEN : GTK_FILE_CHOOSER_ACTION_SAVE, GTK_STOCK_CANCEL,
+	GtkWidget *dialog = gtk_file_chooser_dialog_new("L:A_N:application_PC:T_ID:com.orbitalquark.textadept_O:URL",
+		GTK_WINDOW(window), open ? GTK_FILE_CHOOSER_ACTION_OPEN : GTK_FILE_CHOOSER_ACTION_SAVE, GTK_STOCK_CANCEL,
 		GTK_RESPONSE_CANCEL, open ? GTK_STOCK_OPEN : GTK_STOCK_SAVE, GTK_RESPONSE_ACCEPT, NULL);
 	GtkFileChooser *fc = GTK_FILE_CHOOSER(dialog);
 	if (opts->dir) gtk_file_chooser_set_current_folder(fc, opts->dir);

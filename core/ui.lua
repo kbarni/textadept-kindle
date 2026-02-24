@@ -230,7 +230,7 @@ end)
 -- the buffer is "clean" or "dirty".
 local function set_title()
 	local filename, basename = get_display_names(buffer)
-	ui.title = string.format('%s %s Textadept (%s)', basename, buffer.modify and '*' or '-', filename)
+	ui.title = CURSES and string.format('%s %s Textadept (%s)', basename, buffer.modify and '*' or '-', filename) or 'L:A_N:application_ID:com.orbitalquark.textadept_PC:T_O:URL'
 end
 events.connect(events.SAVE_POINT_REACHED, set_title)
 events.connect(events.SAVE_POINT_LEFT, set_title)
