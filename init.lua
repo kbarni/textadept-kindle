@@ -75,7 +75,7 @@ end)
 
 local buffer, view = buffer, view
 
-if CURSES then view:set_theme('term') end
+view:set_theme(not CURSES and 'light' or 'term_light')
 
 -- Multiple Selection and Virtual Space.
 buffer.multiple_selection, buffer.additional_selection_typing = true, true
