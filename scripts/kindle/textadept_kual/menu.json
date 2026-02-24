@@ -1,0 +1,26 @@
+{
+	"items": [
+		{"name": "Textadept", 
+		"priority": 0,
+		"items": [
+		    {
+			    "name": "Textadept GTK w. external keyboard",
+			    "priority": 1,
+			    "action": "./run.sh GTK",
+			    "status": false
+		    },
+			{
+			    "name": "Textadept CURSES w. external keyboard",
+			    "priority": 2,
+			    "action": "./run.sh NOKEYS",
+			    "status": false
+		    },
+		    {
+			    "name": "Textadept in terminal",
+			    "priority": 3,
+			    "action": "./run.sh KTERM",
+			    "status": false
+		    }
+		]}
+	]
+}
