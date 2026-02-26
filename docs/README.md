@@ -2,6 +2,42 @@
 
 Textadept is a fast, minimalist, and remarkably extensible cross-platform text editor for programmers.
 
+## Kindle usage notes
+
+Textadept is an advanced text editor you can use on a jailbroken Kindle. Currently it works on ARMHF firmwares (version 5.16.2+). It has graphical interface that uses GTK and text interface that can be run from Kterm.
+
+It is strongly recommended to use an external Bluetooth keyboard for typing. Use the **[Kindle Hid Passthrough](https://github.com/kbarni/kindle-hid-passthrough/releases/latest)** library to connect bluetooth keyboards.
+
+If you don't have a BT keyboard, launch the Textadept without external keyboard from KUAL. Otherwise you can use either the GUI version, or the terminal version without on-screen keyboard. I recommend using the terminal version, as the GUI version lags in the e-ink displays.
+
+One shortcut to remember: **Ctrl+P** will bring up the **Select command** dialog for quick access to all the commands.
+
+Read the [Manual][] and the [Lua API Docs][] for more advanced usage.
+
+## Kindle porting notes
+
+**Textadept** is a desktop-grade text editor - at par with its more popular siblings like VSCode, with a small but dedicated user base. This is the full port for Kindle, nothing removed, no compromises. You can use the configuration files and scripts from the desktop version to get the same experience!
+
+The current version (12.9) was adapted to cross-compile for Kindle, with some tweaks for the e-ink display and the Kindle libraries.
+
+Clone the repo, install a cross-compile toolchain and create a cross-compile cmake config file. You might need to build the *curses* library if it's not present in the toolchain.
+
+```bash
+mkdir build
+cd build
+cmake .. -DCMAKE_TOOLCHAIN_FILE=../kindle-toolchain.cmake
+```
+
+*Now copy the patched Scintilla files from the `patchedfiles` folder to the original location in the build folder.* Then, you can build textadept:
+
+```
+make -j 8
+```
+
+*Final note: Textadept 13 (in development when I'm writing this) seems to have transferred to the C17 standard, unsupported by the Kindle system libraries. So this is probably the last version with Kindle port.*
+
+---
+
 Quick links: [Download][] \| [Manual][] \| [Lua API Docs][] \| [Project Page][]
 
 <a href="assets/images/windows.png"><img src="assets/images/windows.png" alt="windows" width="400" style="vertical-align: top;"/></a>
