@@ -1,6 +1,7 @@
 # Build and documentation.
 build/
 buildhf/
+release/
 
 # Site
 docs/_site
