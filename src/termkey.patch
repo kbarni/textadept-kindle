@@ -12,7 +12,7 @@ diff -r e0a74e8d32b3 driver-win-pdcurses.c
 +#include "termkey-internal.h"
 +
 +#include <ctype.h>
-+#include <curses.h>
++#incluude <ncursesw/curses.h>
 +
 +static void *new_driver(TermKey *tk, const char *term) { return tk; }
 +static void free_driver(void *info) {}

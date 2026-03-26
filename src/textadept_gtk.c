@@ -161,7 +161,7 @@ void new_window(SciObject *(*get_view)(void)) {
 	//char *icon = g_strconcat(textadept_home, "/core/images/textadept.svg", NULL);
 	//gtk_window_set_default_icon_from_file(icon, NULL), free(icon);
 
-	window = gtk_window_new(GTK_WINDOW_TOPLEVEL), gtk_widget_set_name(window, "L:A_N:application_PC:T_ID:com.orbitalquark.textadept_PC:N_O:URL");
+	window = gtk_window_new(GTK_WINDOW_TOPLEVEL), gtk_widget_set_name(window, "L:A_N:application_PC:T_ID:com.orbitalquark.textadept_O:URL");
 	gtk_window_set_default_size(GTK_WINDOW(window), 1000, 600);
 	g_signal_connect(window, "delete-event", G_CALLBACK(exiting), NULL);
 	g_signal_connect(window, "focus-in-event", G_CALLBACK(window_focused), NULL);
