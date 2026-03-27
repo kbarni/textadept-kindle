@@ -253,7 +253,8 @@ set(ta_compile_opts
 	$<$<BOOL:${PROFILE}>:-pg --coverage>
 	$<$<BOOL:${TEXTADEPT_HOME}>:-DTEXTADEPT_HOME="${TEXTADEPT_HOME}">)
 set(ta_link_opts $<$<BOOL:${PROFILE}>:--coverage>)
-set(ta_link_libs scintilla lua lpeg lfs regex $<$<OR:$<BOOL:${WIN32}>,$<BOOL:${APPLE}>>:iconv>)
+set(ta_link_libs scintilla lua lpeg lfs regex lipc $<$<OR:$<BOOL:${WIN32}>,$<BOOL:${APPLE}>>:iconv>)
+include_directories(src)
 
 # Textadept Qt.
 if(QT)

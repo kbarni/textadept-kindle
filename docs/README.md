@@ -18,7 +18,12 @@ Read the [Manual][] and the [Lua API Docs][] for more advanced usage.
 
 **Textadept** is a desktop-grade text editor - at par with its more popular siblings like VSCode, with a small but dedicated user base. This is the full port for Kindle, nothing removed, no compromises. You can use the configuration files and scripts from the desktop version to get the same experience!
 
-The current version (12.9) was adapted to cross-compile for Kindle, with some tweaks for the e-ink display and the Kindle libraries.
+The current version (12.9) was adapted to cross-compile for Kindle, with some tweaks for the e-ink display and the Kindle libraries. 
+
+It also has system-related tweaks, like manipulating the backlight and preventing screensaver (which can happen if you don't touch the screen).
+
+
+**Building**
 
 Clone the repo, install a cross-compile toolchain and create a cross-compile cmake config file. You might need to build the *curses* library if it's not present in the toolchain.
 

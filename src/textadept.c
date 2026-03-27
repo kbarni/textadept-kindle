@@ -24,6 +24,49 @@
 #include <sys/sysctl.h> // for sysctl
 #endif
 
+#ifdef __arm__
+#include "openlipc.h"
+static LIPC *lipcInstance = NULL;
+
+static void openLipcInstance() {
+	if (!lipcInstance) lipcInstance = LipcOpen("com.kbarni.textadept");
+}
+
+static void closeLipcInstance() {
+	if (lipcInstance) LipcClose(lipcInstance), lipcInstance = NULL;
+}
+
+static int kindle_set_backlight(lua_State *L) {
+	int intensity = luaL_checkinteger(L, 1);
+	if (lipcInstance) LipcSetIntProperty(lipcInstance, "com.lab126.powerd", "flIntensity", intensity);
+	return 0;
+}
+
+static int kindle_get_backlight(lua_State *L) {
+	int intensity = 0;
+	if (lipcInstance && LipcGetIntProperty(lipcInstance, "com.lab126.powerd", "flIntensity", &intensity) == LIPC_OK)
+		lua_pushinteger(L, intensity);
+	else
+		lua_pushnil(L);
+	return 1;
+}
+
+static int kindle_set_sleep(lua_State *L) {
+	if (lipcInstance) LipcSetIntProperty(lipcInstance, "com.lab126.powerd", "preventScreenSaver", !lua_toboolean(L, 1));
+	return 0;
+}
+
+static int kindle_alert(lua_State *L) {
+	const char *title = luaL_checkstring(L, 1), *text = luaL_checkstring(L, 2);
+	if (lipcInstance) {
+		char json[512];
+		snprintf(json, sizeof(json), "{ \"clientParams\":{ \"alertId\":\"appAlert1\", \"show\":true, \"customStrings\":[ { \"matchStr\":\"alertTitle\", \"replaceStr\":\"%s\" }, { \"matchStr\":\"alertText\", \"replaceStr\":\"%s\" } ] } }", title, text);
+		LipcSetStringProperty(lipcInstance, "com.lab126.pillow", "pillowAlert", json);
+	}
+	return 0;
+}
+#endif
+
 // Variables declared in textadept.h.
 char *textadept_home;
 SciObject *focused_view, *command_entry;
@@ -907,6 +950,15 @@ static bool init_lua(int argc, char **argv) {
 	lua_pushcfunction(L, add_timeout_lua), lua_setglobal(L, "timeout");
 	lua_pushcfunction(L, lua_ishidpi), lua_setglobal(L, "is_hidpi");
 
+#ifdef __arm__
+	lua_newtable(L);
+	lua_pushcfunction(L, kindle_set_backlight), lua_setfield(L, -2, "set_backlight");
+	lua_pushcfunction(L, kindle_get_backlight), lua_setfield(L, -2, "get_backlight");
+	lua_pushcfunction(L, kindle_set_sleep), lua_setfield(L, -2, "set_sleep");
+	lua_pushcfunction(L, kindle_alert), lua_setfield(L, -2, "alert");
+	lua_setglobal(L, "kindle");
+#endif
+
 	if (lua = L, !run_file("core/init.lua"))
 		return (lua_close(L), lua = NULL, exit_status = 1, false);
 	return (exit_status = 0, true);
@@ -1217,6 +1269,10 @@ static SciObject *new_view(sptr_t doc) {
 static SciObject *create_first_view(void) { return new_view(0); }
 
 void close_textadept(void) {
+#ifdef __arm__
+	if (lipcInstance) LipcSetIntProperty(lipcInstance, "com.lab126.powerd", "preventScreenSaver", 0);
+	closeLipcInstance();
+#endif
 	if (lua) {
 		closing = true;
 		while (unsplit_view(focused_view, delete_view)) {}
@@ -1270,6 +1326,10 @@ bool init_textadept(int argc, char **argv) {
 	textadept_home = strcpy(textadept_home, TEXTADEPT_HOME);
 #endif
 	if (getenv("TEXTADEPT_HOME")) strcpy(textadept_home, getenv("TEXTADEPT_HOME"));
+
+#ifdef __arm__
+	openLipcInstance();
+#endif
 
 	setlocale(LC_COLLATE, "C"), setlocale(LC_NUMERIC, "C"); // for Lua
 	bool ok = init_lua(argc, argv);
