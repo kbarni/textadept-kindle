@@ -22,6 +22,11 @@ The current version (12.9) was adapted to cross-compile for Kindle, with some tw
 
 It also has system-related tweaks, like manipulating the backlight and preventing screensaver (which can happen if you don't touch the screen).
 
+**Some useful tweaks**
+
+- Edit the booklet (`documents/textadept.sh`) to activate either the GTK (graphical mode) ot the Curses (text mode) variant. While the GTK is nicer, the screen refresh is much slower; I find it easier to type in text mode.
+- If you prefer to use Textadept in English instead of the device language, rename the `textadept/core/locale` folder to something else.
+- **Textadept is incredibly configurable** but it's not straightforward. There is no configuration interface, everything is done in LUA scripts. I strongly recommend reading the API and the wiki to taylor Textadept to your needs. (*pro tip: use AI to write the scripts, if you are not good in LUA*)
 
 **Building**
 
