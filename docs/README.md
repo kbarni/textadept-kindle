@@ -4,15 +4,15 @@ Textadept is a fast, minimalist, and remarkably extensible cross-platform text e
 
 ## Kindle usage notes
 
-Textadept is an advanced text editor you can use on a jailbroken Kindle. Currently it works on ARMHF firmwares (version 5.16.2+). It has graphical interface that uses GTK and text interface that can be run from Kterm.
+Textadept is an advanced text editor you can use on a jailbroken Kindle. Currently it works on HF and PW2 firmwares (almost every touch Kindle). It has graphical interface that uses GTK and text interface that can be run from Kterm.
 
 It is strongly recommended to use an external Bluetooth keyboard for typing. Use the **[Kindle Hid Passthrough](https://github.com/kbarni/kindle-hid-passthrough/releases/latest)** library to connect bluetooth keyboards.
 
-If you don't have a BT keyboard, launch the Textadept without external keyboard from KUAL. Otherwise you can use either the GUI version, or the terminal version without on-screen keyboard. I recommend using the terminal version, as the GUI version lags in the e-ink displays.
+If you don't have a BT keyboard, launch the *Textadept without external keyboard* from KUAL. Otherwise you can use either the GUI version, or the terminal version without on-screen keyboard. I recommend using the terminal version, as the GUI version lags in the e-ink displays.
 
 One shortcut to remember: **Ctrl+P** will bring up the **Select command** dialog for quick access to all the commands.
 
-Read the [Manual][] and the [Lua API Docs][] for more advanced usage.
+Read the [Manual](https://orbitalquark.github.io/textadept/manual.html) and the [Lua API Docs](https://orbitalquark.github.io/textadept/api.html) for more advanced usage.
 
 ## Kindle porting notes
 
@@ -44,7 +44,7 @@ cmake .. -DCMAKE_TOOLCHAIN_FILE=../kindle-toolchain.cmake
 make -j 8
 ```
 
-*Final note: Textadept 13 (in development when I'm writing this) seems to have transferred to the C17 standard, unsupported by the Kindle system libraries. So this is probably the last version with Kindle port.*
+*Final note: Textadept 13 (in development as I'm writing this) seems to have transferred to the C17 standard, unsupported by the Kindle system libraries. So this is probably the last version with Kindle port.*
 
 ---
 
